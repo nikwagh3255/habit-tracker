@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habits</title>
+
+    <!-- SEO -->
+    <meta name="my-habits" content="Hábitos - Rastreando os hábitos diários"> 
+
+    <!-- SMO -->
+    <meta property="og:title" content="Hábitos - Rastreando os hábitos diários" >
+    <meta property="og:site_name" content="Rastreador de hábitos">
+    <meta property="og:description" content="Rastreie seus hábitos. Saiba como você está com as principais atividades do seu dia à dia.">
+    <meta property="og:url" content="https://github.com/fernandoalvesrufino/nlw-11-habit-tracker">
+    <meta property="og:image" content="https://uploads-ssl.webflow.com/6027a0c20f124c04b4c62dfe/6027a0c20f124c5f4ac633c0_Everyday-habit-tracker-app.jpeg">
+    <meta property="og:image/type">
+ 
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="Logomarca do aplicativo Habits" />
+
+      <button>
+        <img src="./assets/plus.svg" alt="ícone sinal de mais roxo" />
+        <div>
+          Registrar o meu dia
+        </div>
+      </button>
+    </header>
+
+    <form id="form-habits">
+      <div class="habits">
+        <div class="habit" data-name="bible"><img src="./assets/bible.jpg" alt="Leitura da Bíblia" title="Leitura da Bíblia"></div>
+        <div class="habit" data-name="calendar"><img src="./assets/calendar.jpg" alt="Texto diário" title="Texto diário"></div>
+        <div class="habit" data-name="rocketseat"><img src="https://cdn-images-1.medium.com/max/1200/1*TkXVfLTwsHdwpUEjGzdi9w.jpeg" alt="Curso da Rocketseat" title="Curso da Rocketseat"></div>
+        <div class="habit" data-name="github"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Atividade no GitHub" title="Atividade no GitHub"></div>
+        <div class="habit" data-name="linkedin"><img src="https://img1.gratispng.com/20180320/rbe/kisspng-linkedin-computer-icons-social-media-professional-png-linkedin-transparent-5ab1766dcafc38.5216273615215796298314.jpg" alt="Postagem no LinkedIn" title="Postagem no LinkedIn"></div>
+        <div class="habit" data-name="notion"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="Anotações no notion" title="Anotações no notion"></div>
+        <div class="habit" data-name="duolingo"><img src="https://1000logos.net/wp-content/uploads/2020/10/Duolingo-logo.png" alt="Aprender inglês" title="Aprender inglês"></div>
+        <div class="habit" data-name="danki-code"><img src="./assets/danki-code-logo.png" alt="Curso da Danki Code" title="Curso Danki Code"></div>
+        <div class="habit" data-name="mind-map"><img src="https://play-lh.googleusercontent.com/a0fts9JgssmNY96xHLTebExU2qwBiDmwYybheAf8u-AQ2oFLsMmV_kvZzy1joMif5g" alt="Mapas Mentais" title="Mapas Mentais"></div>
+        <div class="habit" data-name="mimo"><img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Mimo_Logo.png" alt="App de programação" title="App de programação"></div>
+        <div class="habit" data-name="the-news"><img src="https://thenewscc.com.br/wp-content/uploads/2021/10/mug_logo.png" alt="Leitura Jornal" title="Leitura Jornal"></div>
+        <div class="habit" data-name="personal-study"><img src="https://img.icons8.com/emoji/256/books-emoji.png" alt="Estudo Pessoal" title="Estudo Pessoal"></div>
+      </div>
+
+      <div class="days"></div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
